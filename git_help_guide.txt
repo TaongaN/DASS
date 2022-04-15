@@ -1,0 +1,26 @@
+Setup:
+install git
+open cmd in administrator (Windows + S, cmd, right click and choose administrator)
+>ssh-keygen
+follow prompts
+Navigate to C:\Users\your_username/.ssh.
+You should see two files. copy contents of id_rsa.pub
+paste into git ssh (https://github.com/settings/keys)
+
+Initilising:
+open the folder of the honours project
+type cmd in the path directory
+>git init
+>git clone git@github.com:TaongaN/DASS-Early-Warning-System.git
+
+Using:
+open cmd in the honours project directory
+Before you start working:
+>git pull origin main
+
+To upload your work (at the end of every work session):
+>git add .
+>git commit -m "Explain what you did"
+>git pull origin main
+>git push origin main
+If there is a merge conflict request assistance
